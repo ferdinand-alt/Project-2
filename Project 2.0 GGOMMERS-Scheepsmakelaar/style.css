@@ -1,0 +1,357 @@
+
+/* ------------*/
+/* Basic Setup */
+/* ------------*/
+
+:root {
+    --primary-color1: #e67e22;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: lato, Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #555;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    font-weight: 300;
+    font-size: 18px;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* ------------*/
+/* END! Basic Setup */
+/* ------------*/
+
+/* ------------*/
+/* HEADER */
+/* ------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(./Resources/img/Cargo-Tanker-Ship.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    margin: 10px;
+}
+
+/* ------NAVBAR------*/
+
+.navbar {
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 90px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: white; 
+    font-size: 95%;
+    word-spacing: 3px;
+    margin-left:  30px;
+    text-transform: uppercase;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* ------NAVBAR:Hover/Link/Visited------*/
+
+.navbar a:Link, .navbar a:visited {
+    padding: 5px 0px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    border-bottom: 2px solid transparent;
+} 
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--primary-color1);
+    transition: border-bottom 0.3s;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-text-box {
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+}
+
+.hooft-btn{
+    display: inline-block;
+    margin: 40px;
+    padding: 15px 40px;
+    text-decoration: none;
+    background-color:#cf6d17;
+    font-weight: 300;
+    border-radius: 300px;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.hooft-btn:hover, .hooft-btn:active{
+    background-color:var(--primary-color1);
+    color: white;
+    transition: border-bottom 0.4s;
+    cursor: pointer;
+}
+
+
+/* ------EIND--------NAVBAR:Hover/Link/Visited------*/
+
+/* ------------*/
+/* END Header */
+/* ------------*/
+
+h1 {
+    margin: 0;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.hero-h2 {
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+/* ------------*/
+/* Section INFO */
+/* ------------*/
+
+.section-features {
+    padding: 10px;
+    text-align: center;
+}
+
+.section-features p {
+    line-height: 135%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.section-features h2:after {
+    display: block;
+    height: 3px;
+    background-color: #e67e22;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.row {
+    width: 80%;
+    margin-left: 10%;
+    background-color:
+}
+
+/* ------Products------*/
+
+.products-container {
+    margin-top: 10px;
+}
+
+section h3{
+    text-align: center;
+}
+
+section h3:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+.grid {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    max-width: 60%;
+    margin-left: 20%;
+    grid-gap: 15px;
+}
+
+.grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.grid > article:hover {
+    box-shadow: 3px 3px 3px 3px lightblue;
+    transition: border-bottom 0.4s;
+}
+
+.grid img {
+    height: 25vh;
+    width: 90%;
+}
+
+.btn-product {
+    display: inline-block;
+    margin: 40px;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color:#cf6d17;
+    border-radius: 300px;
+    color: white;
+    font-size: 0.8rem;
+    border: none;
+    cursor: grab;
+}
+
+button .hooft-btn{
+    margin: 0 auto;
+    cursor: grab;
+}
+
+/* ------------*/
+/* Features Section */
+/* ------------*/
+
+.features-container {
+    background-color: #232973;
+    margin-bottom: 0;
+}
+
+.features-grid {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    max-width: 60%;
+    margin-left: 20%;
+    grid-gap: 0 15px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+
+/* ------Footer------*/
+
+.footer-tekst {
+    text-align: center;
+}
+
+.footer-container {
+    background-color: #0B0D25;
+    padding: 12px 12px;
+    margin: 0;
+}
+
+.footer-container a{
+    color: white;
+    font-size: 0.8rem;
+}
+
+.certificering {
+    height: 100%;
+    width: auto;
+    padding: 50px;
+}
+
+
+/* ------------*/
+/* About Section */
+/* ------------*/
+
+.about-container {
+    position: relative;
+    bottom: 150px;
+}
+
+.about-grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    max-width: 60%;
+    margin-left: 20%;
+}
+
+.about-grid img{
+    height: 350px;
+    width: auto;
+}
+
+.about-text {
+    height: 350px;
+    padding: 30px;
+    background-color: #e67e22;
+}
+
+/* ------------*/
+/* Contact Section */
+/* ------------*/
+
+
+.contact-container {
+    height: 60vh;
+}
+
+.contact-grid {
+    margin-top: 50px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 60%;
+    margin-left: 20%;
+}
